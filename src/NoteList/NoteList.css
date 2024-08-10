@@ -1,0 +1,13 @@
+.notes {
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: rgb(121, 245, 208);
+    box-shadow: inset 1px -3px 35px 3px rgb(92, 201, 216);
+    padding-bottom: 15px;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

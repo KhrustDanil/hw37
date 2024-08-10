@@ -1,0 +1,9 @@
+.note {
+    background-color: rgb(48, 139, 139);
+    border-radius: 20px;
+    margin: 4px;
+}
+
+.delete {
+    margin: 5px 0 5px 45px;
+}
