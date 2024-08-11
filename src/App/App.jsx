@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import NoteList from '../NoteList/NoteList.jsx';
-import './App.css';
+import styles from './App.module.css';
 import NoteItem from '../NoteItem/NodeItem.jsx';
 
 const App = () => {
@@ -55,23 +55,23 @@ const App = () => {
   };
 
   return (
-    <div className="wrapper">
-      <div className='information'>
+    <div className={styles.wrapper}>
+      <div className={styles.information}>
         {loading ? (
           <p>Loading...</p>
         ) : error ? (
           <p>Error: {error}</p>
         ) : (
-          <div>Name: <span className='name'>{info.name}</span></div>
+          <div>Name: <span className={styles.name}>{info.name}</span></div>
         )}
       </div>
       <form onSubmit={addNotes}>
-        <input type="text" name="noteInput" ref={noteInputRef} />
-        <button type="submit">Add notes</button>
+        <input type="text" name="noteInput" ref={noteInputRef} className={styles.input} />
+        <button type="submit" className={styles.button}>Add notes</button>
       </form>
-      <div className="notes">
+      <div>
         {notes.length === 0 ? (
-          <p>No notes</p>
+          <p className={styles.no_notes}>No notes</p>
         ) : (
           <NoteList title='Notes'>
             {notes.map((note, index) => (

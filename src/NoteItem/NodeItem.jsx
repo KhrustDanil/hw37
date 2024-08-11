@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './NoteItem.css';
+import styles from './NoteItem.module.css';
 
 const NoteItem = ({note, index, getDelete}) => {
     return (
-        <div className='note'>{note}
-        <button className='delete' type='button' onClick={() => getDelete(index)}>Delete</button>
+        <div className={styles.note}>{note}
+        <button className={styles.delete} type='button' onClick={() => getDelete(index)}>Delete</button>
         </div>
     );
 }

@@ -3,6 +3,10 @@
   height: 100px;
   margin: auto;
   margin-top: 380px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 form {
@@ -42,4 +46,10 @@ input {
 
 .name {
   font-weight: bold;
+}
+
+.no_notes {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
 }

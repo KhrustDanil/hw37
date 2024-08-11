@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './NoteList.css';
+import styles from './NoteList.module.css';
 
 class NoteList extends Component {
   
@@ -17,7 +17,7 @@ class NoteList extends Component {
     this.title = this.props.title;
 
     return (
-      <div>
+      <div className={styles.notes}>
         <h2>{this.title}</h2>
         <div>{this.props.children}</div>
       </div>
